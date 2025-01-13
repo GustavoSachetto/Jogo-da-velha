@@ -22,11 +22,12 @@ Este projeto ficou dividido em duas partes, a primeira parte sendo a criação d
 
 ## Proteções básicas
 Algumas proteções que foram aplicadas meticulosamente:
-- Criação de sala
-- Não permitido é duplicação de sala
-- Verificação de vencedor a cada jogada
-- Preenchimento duplicado de posição
-- Reinício de jogo
+- Qualquer jogador pode criar ou entrar nas salas
+- Verificação de vencedor após cada jogada
+- Não é permitido duplicação de sala (mesmo nome)
+- Não é permitido preenchimento duplicado de posição
+- Não é permitido entrar mais de dois jogadores numa mesma sala
+- É possivel reiniciar o jogo sem ter que criar outra sala
 
 ## Comandos iniciais
 __Para executar esse projeto é necessário abrir dois terminais distintos e executar:__
