@@ -1,12 +1,9 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "./public/index.js",
-  "type": "commonjs",
+  "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "start": "node ./public/index.js"
+    "dev": "tsx watch src/index.ts"
   },
   "author": "Gustavo Sachetto da Cruz",
   "license": "ISC",
