@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "commonjs",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node public/index.js"
   },
   "author": "Gustavo Sachetto da Cruz",
   "license": "ISC",
