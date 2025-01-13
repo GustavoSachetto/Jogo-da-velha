@@ -60,9 +60,14 @@ class Game {
       return `vitória do jogador ${this.playerTwo?.id}`
     }
 
-    if (gameResult === 3) return false
+    if (gameResult === 3) {
+      this.playerOne.emit('winner', 'deu velha, nenhum jogador ganhou.')
+      this.playerTwo?.emit('winner', 'deu velha, nenhum jogador ganhou.')
 
-    return 'deu velha, nenhum jogador ganhou.'
+      return 'deu velha, nenhum jogador ganhou.'
+    }
+
+    return false
   }
 
   public checkGameOver(): number | boolean {
