@@ -1,7 +1,7 @@
 import Game from './game'
 import express from 'express'
 import { Server as Io } from 'socket.io'
-import { Server, createServer } from 'http'
+import { Server, createServer } from 'https'
 
 class App {
   public app: express.Application
