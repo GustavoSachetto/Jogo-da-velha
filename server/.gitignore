@@ -1,4 +1,5 @@
 node_modules# Logs
+public
 logs
 *.log
 npm-debug.log*
