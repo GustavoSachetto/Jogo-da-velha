@@ -22,6 +22,8 @@ class App {
 
     this.socketIo.on('connection', (socket) => {
       socket.emit('connection', 'conectado.')
+
+      console.log(`${socket.id} foi conectado.`);
       
       socket.emit('rooms', this.roomsName)
 

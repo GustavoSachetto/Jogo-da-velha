@@ -45,6 +45,13 @@ export const Join = () => {
     })
   }
 
+  const normaliseText = (str: any) => {
+    return str.normalize("NFD")
+      .replace(/[^a-zA-Z\s]/g, "")
+      .replace(/\s/, "")
+      .toLowerCase() // convert: São Paulo, to: sao-paulo
+  }
+
   const MessageAvailableRooms = () => {
     return rooms.length > 0 && <span>Salas disponíveis:</span>
   }
@@ -58,7 +65,7 @@ export const Join = () => {
   return (
     <StyledContentJoin>
       <StyledCreateRoom>
-        <input id="roomName" type="text" placeholder="Nome" onChange={(e) => setNewRoom(e.target.value)} required />
+        <input id="roomName" type="text" placeholder="Nome" onChange={(e) => setNewRoom(normaliseText(e.target.value))} required />
         <button onClick={createRoom}>Criar sala</button>
       </StyledCreateRoom>
       <StyledJoinRoom>
