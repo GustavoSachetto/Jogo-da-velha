@@ -49,7 +49,7 @@ export const Join = () => {
     return str.normalize("NFD")
       .replace(/[^a-zA-Z\s]/g, "")
       .replace(/\s/, "")
-      .toLowerCase() // convert: São Paulo, to: sao-paulo
+      .toLowerCase() // convert: São Paulo, to: saopaulo
   }
 
   const MessageAvailableRooms = () => {
