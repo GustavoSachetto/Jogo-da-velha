@@ -77,7 +77,7 @@ class App {
       })
 
       socket.on('reset-game', (room: any) => {
-        let gameOver: number | boolean = this.rooms[room]?.checkGameOver()
+        let gameOver: number | boolean = this.rooms[room].checkGameOver()
         
         let newPlayerTwo = socket.id == this.rooms[room].playerTwo?.id
           ? this.rooms[room].playerOne
